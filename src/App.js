@@ -25,19 +25,19 @@ export default function App() {
     const receivedNFT = async () => {
       console.log(
         await window.contract.check_token({
-          id: `${window.accountId}-go-team-token`,
+          id: `${window.accountId}-cool-Tshirt`,
         })
       );
       if (window.accountId !== "") {
         console.log(
           await window.contract.check_token({
-            id: `${window.accountId}-go-team-token`,
+            id: `${window.accountId}-cool-Tshirt`,
           })
         );
 
         setuserHasNFT(
           await window.contract.check_token({
-            id: `${window.accountId}-go-team-token`,
+            id: `${window.accountId}-cool-Tshirt`,
           })
         );
       }
@@ -84,7 +84,7 @@ export default function App() {
             <a href='https://wallet.testnet.near.org/'>
               wallet.testnet.near.org
             </a>{" "}
-            to see your new "Go Team" NFT!
+            to see your new "Cool Tshirt" NFT!
           </Alert>
         </Row>
         <Row>
